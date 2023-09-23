@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='icon' href='images/favicon.png'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Geo Game Challenge</title>
+</head>
+
+<body>
+    <div class="gameLogo"><img src="images/logo.png"></div>
+    <div class="startSection" hidden="y">
+        <div class="nextButton">Next</div>
+        <div class="glassScreen glassScreenStart"></div>
+    </div>
+
+    <div class="finalSection" hidden="y">
+        <div class="finalText"></div>
+        <div class="glassScreen"></div>
+    </div>
+
+    <div class="gameSection" hidden="y">
+        <div class="panelSection">
+            <div class="numberBox">
+                <div class="topNumbers sideNumbers points ">0pts</div>
+            </div>
+            <div class="numberBox">
+                <div class="topNumbers timer">20</div>
+            </div>
+            <div class="numberBox">
+                <div class="topNumbers sideNumbers numberQuest">1/20</div>
+            </div>
+        </div>
+        <div class="gameSection-image"> <img class="countryImage" src="images/countries/Afghanistan.svg"></div>
+        <div class="guessTheCountry">Guess the country:</div>
+        <div class="gameSection-buttons">
+            <div class="button option0">option0</div>
+            <div class="button option1">option1</div>
+            <div class="button option2">option2</div>
+            <div class="button option3">option3</div>
+        </div>
+    </div>
+
+    <script src='javascript.js'> </script>
+</body>
+
+</html>
