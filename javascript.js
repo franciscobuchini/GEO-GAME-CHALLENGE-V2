@@ -11,7 +11,7 @@ let countriesList = ["Andorra", "United Arab Emirates", "Afghanistan", "Antigua 
 
 //selectors
 const startSection = document.querySelector(".startSection");
-const nextButton = document.querySelector(".nextButton");
+const principalButton = document.querySelector(".principalButton");
 const finalSection = document.querySelector(".finalSection");
 let gameSection = document.querySelector(".gameSection");
 let finalText = document.querySelector(".finalText");
@@ -33,10 +33,11 @@ let pointsJS = 0;
 let numberQuestJS = 0;
 
 startSection.removeAttribute("hidden", "y");
-nextButton.addEventListener("click", (pressNext));
+principalButton.addEventListener("click", (pressNext));
 
 function pressNext() {
-    gameLogo.setAttribute("hidden", "y");
+    principalButton.removeAttribute("src", "images/start.png");
+    principalButton.setAttribute("src", "images/next.png");
     gameSection.removeAttribute("hidden", "y");
     guessTheCountry.textContent = "Guess the country:";
     let timerJS = 20;
