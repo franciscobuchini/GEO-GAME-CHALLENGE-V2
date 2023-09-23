@@ -249,7 +249,7 @@ body {
 
             /*1.2.2*/
             >.gameSection-image {
-                margin: 4em 0.5em 0em 0.5em;
+                margin: 5em 0.5em 0em 0.5em;
 
                 /*1.2.2.1*/
                 >img {
@@ -265,7 +265,7 @@ body {
 
             /*1.2.4*/
             >.gameSection-buttons {
-                height: 40svh;
+                height: 35svh;
                 display: inline-flex;
                 justify-content: space-evenly;
                 align-items: center;
