@@ -164,3 +164,158 @@ body {
     height: 98.5svh;
     width: 98.5svw;
 }
+
+@media screen and (max-width: 500px) {
+
+    body {
+        background-size: auto;
+
+        >.gameLogo {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            >img {
+                width: 28em;
+            }
+        }
+
+        /*1.1*/
+        >.startSection {
+            position: absolute;
+
+            /*1.1.1*/
+            >.nextButton {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: var(--white);
+                border-radius: 50px;
+                font-size: 1.6rem;
+                font-weight: 600;
+                padding: 1.4em 1em;
+
+                /*1.1.1.1*/
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--green);
+                    color: var(--white);
+                }
+            }
+        }
+
+        /*1.2*/
+        >.gameSection {
+            height: 90svh;
+
+            /*1.2.1*/
+            >.panelSection {
+                top: 1%;
+                left: 46%;
+                transform: translate(-50%, -50%);
+                position: fixed;
+                display: inline-flex;
+                background-color: var(--white);
+                border-radius: 20px;
+                width: 28em;
+                height: 4em;
+                justify-content: center;
+
+                /*1.2.1.1*/
+                >.numberBox {
+                    width: 3em;
+                    height: 3em;
+
+                    /*1.2.1.1.1*/
+                    >.topNumbers {
+                        position: relative;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        padding-top: 0.5em;
+                    }
+
+                    >.sideNumbers {
+                        padding-top: 0.8em;
+                    }
+
+                    /*1.2.1.1.2*/
+                    >.timer {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            /*1.2.2*/
+            >.gameSection-image {
+                margin: 4em 0.5em 0em 0.5em;
+
+                /*1.2.2.1*/
+                >img {
+                    height: 22em;
+                    width: 22em;
+                }
+            }
+
+            /*1.2.3*/
+            >.guessTheCountry {
+                font-size: 1.5rem;
+            }
+
+            /*1.2.4*/
+            >.gameSection-buttons {
+                height: 40svh;
+                display: inline-flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-flow: column wrap;
+                width: 25em;
+
+                /*1.2.4.1*/
+                >.button {
+                    background-color: var(--white);
+                    width: 80%;
+                    padding: 1em 0 1em 0;
+                    border-radius: 20px;
+
+                    /*1.2.4.1.1*/
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                >.greenButton {
+                    background-color: var(--green);
+                    color: var(--white);
+                }
+
+                >.redButton {
+                    background-color: var(--red);
+                    color: var(--white);
+                }
+            }
+        }
+
+        >.finalSection {
+            position: absolute;
+            height: 98.5svh;
+            width: 98.5svw;
+            text-align: center;
+
+            >.finalText {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .glassScreen {
+        background-color: #00000000;
+        height: 90svh;
+        width: 98.5svw;
+    }
+}
